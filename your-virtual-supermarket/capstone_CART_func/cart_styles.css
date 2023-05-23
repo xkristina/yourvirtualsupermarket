@@ -1,0 +1,545 @@
+/* CART.PHP STYLES */
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+
+.container{
+  max-width: 1200px;
+  margin:0 auto;
+}
+
+section{
+  padding:2rem;
+}
+
+
+
+.heading{
+  text-align: left;
+    font-size: 2rem;
+    color:darkolivegreen;
+    margin-bottom: 5rem;
+}
+
+:root{
+ --black:#333;
+ --white:#fff;
+ --bg-color:#eee;
+ --dark-bg:#000000b3;
+ --box-shadow:0 .5rem 1rem #0000001a;
+ --border:.1rem solid #999;
+}
+
+
+.btn,
+.option-btn{
+  display: block;
+  width: 60%;
+  text-align: center;
+  text-transform: uppercase;
+  color:white;
+  font-size: 1.5rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  background-color: rgb(174, 210, 140);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  float: none;
+  padding: 0.625rem 0;
+  margin: 1rem auto;
+}
+
+.btn:hover,
+.option-btn:hover{
+  background-color: #00b900;
+}
+
+.option-btn i{
+  padding-right: .5rem;
+}
+
+
+
+
+.header{
+  background-color: green;
+  position: sticky;
+  top:0; left:0;
+  z-index: 1000;
+}
+
+.header .flex{
+  display: flex;
+  align-items: center;
+  padding:1.5rem 2rem;
+  max-width: 1200px;
+  margin:0 auto;
+}
+
+.header .flex .logo{
+  margin-right: auto;
+  font-size: 2.5rem;
+  color:white;
+}
+
+.header .flex .navbar a{
+  margin-left: 2rem;
+  font-size: 2rem;
+  color:white;
+}
+
+.header .flex .navbar a:hover{
+  color:greenyellow;
+}
+
+.header .flex .cart{
+  margin-left: 2rem;
+  font-size: 2rem;
+  color:white;
+}
+
+.header .flex .cart:hover{
+  color:greenyellow;
+}
+
+.header .flex .cart span{
+  padding:.1rem .5rem;
+  border-radius: .5rem;
+  background-color: white;
+  color:green;
+  font-size: 2rem;
+}
+
+
+
+aside {
+  float: right;
+  position: relative;
+  width: 30%;
+  padding: 0 1rem;
+}
+
+.summary {
+  background-color: white;
+  border: 1px solid whitesmoke;
+  padding: 1rem;
+  position: fixed;
+  width: 450px;
+  font-size: 1.7rem;
+  box-sizing: border-box; 
+}
+
+.summary-total-items {
+  color: darkolivegreen;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.summary-subtotal,
+.summary-total {
+  border-top: 1px solid #656565;
+  border-bottom: 1px solid #656565;
+  clear: both;
+  margin: 1rem 0;
+  overflow: hidden;
+  padding: 0.5rem 0;
+}
+
+.subtotal-title,
+.subtotal-value,
+.total-title,
+.total-value,
+.promo-title,
+.promo-value {
+  color: black;
+  float: left;
+  width: 50%;
+}
+
+
+.summary-delivery {
+  padding-bottom: 3rem;
+}
+
+.subtotal-value,
+.total-value {
+  text-align: right;
+}
+
+.total-title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.summary-checkout {
+  display: block;
+}
+
+.checkout-btn {
+  display: block;
+  float: none;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.625rem 0;
+  width: 60%;
+  background-color: tomato;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin: 1rem auto;
+}
+
+
+.btn:hover,
+.checkout-btn:hover{
+  background-color: red;
+}
+
+
+.summary-delivery-selection {
+  background-color: whitesmoke;
+  border: 1.5px solid olivedrab;
+  border-radius: 4px;
+  display: block;
+  font-size: 1.5rem;
+  height: 34px;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.basket{
+  background-color: white;
+  color: black;
+  font-family: sans-serif;
+  font-size: 1.7rem;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+
+a {
+  border: 0 none;
+  outline: 0;
+  text-decoration: none;
+}
+
+.product-details h1 {
+  font-weight: bold;
+  color: #005D7E;
+  font-size: 10px;
+}
+
+
+input{
+  color: black;
+  background-color: whitesmoke;
+  border: 1.5px solid olivedrab;
+  border-radius: 4px;
+}
+
+.promo-code-btn {
+  background-color: orange;
+  color: #fff;
+  border: 1.5px solid orange;
+  border-radius: 4px;
+  padding: 9px;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.promo-code-btn:hover,
+.promo-code-btn:focus {
+  background-color: darkorange;
+  cursor: pointer;
+}
+
+img,
+.basket-module,
+.basket-labels,
+.basket-product {
+  width: 100%;
+}
+
+input,
+button,
+.basket,
+.basket-module,
+.basket-labels,
+.item,
+.price,
+.quantity,
+.subtotal,
+.basket-product,
+.product-image,
+.product-details {
+  float: left;
+}
+
+
+.basket {
+  width: 70%;
+}
+
+.basket-module {
+  color: #111;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  margin-top: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.promo-code-field {
+  border: 1px solid whitesmoke;
+  padding: 0.5rem;
+  transition: all 0.2s linear;
+  width: 45%;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.promo-code-field:hover,
+.promo-code-field:focus {
+  border: 1px solid olivedrab;
+}
+
+
+.basket-labels {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-top: 1.5rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  color: black;
+  display: inline-block;
+  padding: 0.5rem 0;
+}
+
+
+/*The :before pseudo-element is used to insert content before the selected element, 
+and the content property is set to an empty string. */
+/* This is a technique used in CSS to add decorative elements to elements without having to modify the HTML code. */
+li.price:before,
+li.subtotal:before {
+  content: "";
+}
+
+.item {
+  width: 55%;
+}
+
+.price,
+.quantity,
+.subtotal {
+  width: 15%;
+}
+
+.subtotal {
+  text-align: right;
+}
+
+.remove {
+  bottom: 2rem;
+  float: right;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  width: 45%;
+}
+
+.remove button {
+  background-color: transparent;
+  color: tomato;
+  float: none;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.remove button:hover{
+  color: red;
+}
+
+.item-heading {
+  padding-left: 3rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.basket-product {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.product-image {
+  width: 35%;
+}
+
+.product-details {
+  width: 65%;
+}
+
+.product-frame {
+  border: 1px solid #aaa;
+}
+
+.product-details {
+  padding: 0 1.5rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+.quantity form {
+  display: inline-block;
+}
+
+.quantity input[type="number"] {
+  width: 40px;
+  padding: 5px;
+  border: 1px solid mediumaquamarine;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.quantity input[type="submit"] {
+  display: inline-block;
+  margin-left: 5px;
+  padding: 5px 10px;
+  background-color: mediumaquamarine;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.quantity input[type="submit"]:hover {
+  background-color: #005F6B;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* PRODUCT.PHP STYLES */
+
+.products .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 30rem);
+  gap:1.5rem;
+  justify-content: center;
+}
+
+.products .box-container .box{
+  text-align: center;
+  padding:2rem;
+  box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.2);
+  border:.1rem solid #999;
+  border-radius: .5rem;
+}
+
+.products .box-container .box img{
+  height: 20rem;
+}
+
+.products .box-container .box .details-container{
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.products .box-container .box h3{
+  margin:0;
+  font-size: 2rem;
+  color:black;
+}
+
+.products .box-container .box .details{
+  margin-top: 1rem;
+  font-size: 2rem;
+  color:olivedrab;
+}
+
+.products .box-container .box .price-measurement-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.products .box-container .box .price{
+  font-size: 1.5rem;
+  color:black;
+}
+
+.products .box-container .box .measurement{
+  font-size: 1.5rem;
+  color:black;
+}
+
+.products .box-container .box input.btn{
+  background-color: mediumaquamarine;
+  color: white;
+  border: none;
+  padding: 1rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.products .box-container .box input.btn:hover{
+  background-color: #005D7E;
+}
+
+

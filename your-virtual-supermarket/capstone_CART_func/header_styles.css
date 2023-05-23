@@ -1,0 +1,60 @@
+/* HEADER.PHP STYLES */
+
+.heading{
+    text-align: left;
+      font-size: 2rem;
+      color:darkolivegreen;
+      margin-bottom: 5rem;
+  }
+
+
+.header {
+    background-color: green;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .header .flex {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .header .flex .logo {
+    margin-right: auto;
+    font-size: 2.5rem;
+    color: white;
+  }
+  
+  .header .flex .navbar a {
+    margin-left: 2rem;
+    font-size: 2rem;
+    color: white;
+  }
+  
+  .header .flex .navbar a:hover {
+    color: greenyellow;
+  }
+  
+  .header .flex .cart {
+    margin-left: 2rem;
+    font-size: 2rem;
+    color: white;
+  }
+  
+  .header .flex .cart:hover {
+    color: greenyellow;
+  }
+  
+  .header .flex .cart span {
+    padding: 0.1rem 0.5rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    color: green;
+    font-size: 2rem;
+  }
+  

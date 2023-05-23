@@ -1,0 +1,16 @@
+.form {
+    margin-top: 100px;
+    margin-left: 450px;
+    margin-right: 450px;
+    padding: 10px 30px;
+    padding-bottom: 40px;
+    border-style: outset;
+
+}
+
+
+#fname, #lname, #telnum, #email, #password {
+    width: 90%;
+    height: 25px;
+    font-size: 16px;
+}
